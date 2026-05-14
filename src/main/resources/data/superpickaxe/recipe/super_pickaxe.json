@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "D": "minecraft:diamond",
+    "S": "minecraft:stick"
+  },
+  "pattern": ["III", "SDS", "III"],
+  "result": {
+    "count": 1,
+    "id": "superpickaxe:super_pickaxe"
+  }
+}

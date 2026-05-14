@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "superpickaxe",
+	"version": "${version}",
+	"name": "Super Pickaxe",
+	"description": "Left-click to blast a 3x3x4 area and auto-collect ores!",
+	"authors": ["You"],
+	"license": "All Rights Reserved",
+	"icon": "assets/superpickaxe/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["pickaxe.Superpickaxe"],
+		"client": ["pickaxe.client.SuperpickaxeClient"],
+		"fabric-datagen": ["pickaxe.client.SuperpickaxeDataGenerator"]
+	},
+	"mixins": [
+		"superpickaxe.mixins.json",
+		{
+			"config": "superpickaxe.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
